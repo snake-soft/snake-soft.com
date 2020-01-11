@@ -10,9 +10,39 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <style>
+html {
+  scroll-behavior: smooth;
+}
+        
+        .headjumbotron {
+    margin-bottom: 0px;
+    background-image: url("images/code_background1.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+        .jumbotron {
+    margin-bottom: 0px;
+    background-image: url("images/heilbronn_von_Wartberg.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 300px;
+}
+#kontakt input, #kontakt textarea{color:#495057!important;}
+        </style>
+
+
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -20,16 +50,18 @@
 					<header id="header" class="alt">
 
 						<!-- Logo -->
+            <!-- 
 							<div class="logo">
 								<a href="index.html"><strong>Hypothesis</strong> <span class="extra">by Pixelarity</span></a>
 							</div>
-
+             -->
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="#wrapper">Home</a></li>
 									<li>
-										<a href="#" class="icon solid fa-angle-down">Dropdown</a>
+										<a href="#leistungen">Leistungen</a>
+                    <!-- 
 										<ul>
 											<li><a href="#">Option One</a></li>
 											<li><a href="#">Option Two</a></li>
@@ -44,9 +76,10 @@
 												</ul>
 											</li>
 										</ul>
+                     -->
 									</li>
-									<li><a href="generic.html">Generic</a></li>
-									<li><a href="elements.html">Elements</a></li>
+									<li><a href="#produkte">Produkte</a></li>
+									<li><a href="#kontakt">Kontakt</a></li>
 								</ul>
 							</nav>
 
@@ -54,53 +87,155 @@
 
 				<!-- Banner -->
 					<section id="banner">
+                      <div class="headjumbotron">
 						<div class="content primary">
-							<header>
-								<h1>Sed magna consequat<br />
-								lorem amet feugiat</h1>
-								<p>Ipsum feugiat veroeros lorem dolor</p>
+							<header style="background:rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);">
+                                <h1 class="mb-5"><img src="images/logo.png" class="w-75" style="max-width: 900px;"></img></h1>
+                                <!-- 
+								<span style="background-color:white;">Snake-Soft(logo)<br />
+								die </span> -->
 							</header>
 							<ul class="actions special">
-								<li><a href="#one" class="button large wide scrolly">Learn More</a></li>
+								<li><a href="#one" class="button large wide scrolly">Unsere Produkte <span class="icon solid fa-arrow-down"></span></a></li>
 							</ul>
 						</div>
-						<div class="content secondary">
-							<div class="inner">
-								<div class="features">
-									<section>
-										<span class="icon fa-gem major"></span>
-										<h3>Sed Aliquam</h3>
-										<p>Morbi in sem quis dui placerat ornare. Pellentesque ipsum dolor</p>
-									</section>
-									<section>
-										<span class="icon solid fa-chart-line major"></span>
-										<h3>Lorem Feugiat</h3>
-										<p>Integer vitae libero ac risus eges placerat voluptrus magna</p>
-									</section>
-									<section>
-										<span class="icon solid fa-camera-retro major"></span>
-										<h3>Veroeros Nullam</h3>
-										<p>Fusce lobortis lorem ipsum semper sagittis etiam consequat</p>
-									</section>
-								</div>
-							</div>
-						</div>
-						<video src="images/banner.mp4" muted autoplay loop playsinline></video>
+                      </div>
+				<!-- Leistungen -->
+						<div id="leistungen" class="content secondary" style="border-top: 1px solid #f2f2f2;">
+                          <div class="inner container-fluid">
+                            <div class="row">
+                              <div class="col-sm-4 d-flex">
+                                <div class="card flex-fill text-center">
+                                  <div class="card-body">
+                                    <span class="icon solid fa-code major"></span>
+                                    <h3 class="card-title">Software<wbr>entwicklung</h3>
+                                    <p class="card-text">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Komplexe Webapplikationen</li>
+                                      </ul>
+                                      </p>
+                                      <!-- <a href="#" class="btn btn-primary">Weiter lesen</a> -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 d-flex">
+                                <div class="card flex-fill text-center">
+                                  <div class="card-body">
+                                    <span class="icon solid fa-chart-line major"></span>
+                                    <h3 class="card-title">Agile <wbr>Prozesse</h3>
+                                    <p class="card-text">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Flexible und schlanke Entwicklungsprozesse</li>
+                                        <li class="list-group-item">Optimale Kundenorientierung</li>
+                                      </ul>
+                                      </p>
+                                      <!-- <a href="#" class="btn btn-primary">Weiter lesen</a> -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 d-flex">
+                                <div class="card flex-fill text-center">
+                                  <div class="card-body">
+                                    <span class="icon solid fas fa-layer-group major"></span>
+                                    <h3 class="card-title">Continuous <wbr>Integration</h3>
+                                    <p class="card-text">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Optimale Kundenorientierung</li>
+                                        <li class="list-group-item">Testgetriebene Entwicklung</li>
+                                      </ul>
+                                      </p>
+                                      <!-- <a href="#" class="btn btn-primary">Weiter lesen</a> -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+						<!-- <video src="images/banner.mp4" muted autoplay loop playsinline></video> -->
 					</section>
 
 				<!-- Section -->
 					<section id="one" class="main">
-						<header class="accent1">
-							<h2>Sed adipising ornare risus</h2>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus, metus lorem feugiat tempus adipiscing.</p>
+						<header id="produkte" class="accent1">
+							<h2>Produkte</h2>
+							<p>Wieso verwenden wir was wir verwenden</p>
 						</header>
 						<ul class="tabs">
 							<li>
-								<h3>Lorem <span class="extra">ipsum dolor</span></h3>
+								<h3>Python</h3>
 								<div class="spotlight">
 									<ul>
 										<li>
+											<h4>Codequalität</h4>
+											<p>Lesbare Syntax</p>
+											<p>Umfangreiche Standardbibliothek</p>
+											<p>Wiederverwendbarkeit</p>
+											<p>Standardisiert</p>
+											<p>Etabliert</p>
+										</li>
+										<li>
+											<h4>Dynamisch und modular</h4>
+											<p>Erweiterbarkeit</p>
+										</li>
+									</ul>
+									<span class="image"><img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="" /></span>
+									<ul>
+										<li>
+											<h4>Test-Infrastruktur</h4>
+											<p>Automatisierte Software Tests</p>
+											<p>Qualitätssicherung</p>
+										</li>
+										<li>
+											<h4>Herkunft des Namens</h4>
+											<p>Der Name 'Python' stammt wider erwarten <b>nicht</b> von der gleichnamigen Schlange.</p>
+                                            <p>Stattdessen gilt die britische Comedygruppe Monty Pythons als Namensgeber der Programmiersprache Python.</p>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>Django</h3>
+								<div class="spotlight">
+									<ul>
+										<li>
+											<h4>Was ist Django?</h4>
+											<p>"The Web framework for perfectionists with deadlines"</p>
+											<p>Python</p>
+										</li>
+										<li>
+											<h4>Architektur</h4>
+											<p>Model-View-Controller Konzept</p>
+										</li>
+									</ul>
+									<span class="image"><img style="border-radius:5px;" src="https://static.djangoproject.com/img/logos/django-logo-negative.png" alt="" /></span>
+									<ul>
+										<li>
+											<h4>Quis portitor</h4>
+											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+										</li>
+										<li>
 											<h4>Magna accumsan</h4>
+											<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<h3>Webstandards</h3>
+								<div class="spotlight">
+									<ul>
+										<li>
+											<h4>HTML</h4>
+											<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
+										</li>
+										<li>
+											<h4>CSS</h4>
+											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+										</li>
+									</ul>
+									<span class="image"><img style="border-radius:5px;" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="" /></span>
+									<ul>
+										<li>
+											<h4>JavaScript</h4>
 											<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
 										</li>
 										<li>
@@ -108,56 +243,19 @@
 											<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
 										</li>
 									</ul>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-									<ul>
-										<li>
-											<h4>Neque veroeros</h4>
-											<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
-										</li>
-										<li>
-											<h4>Quis portitor</h4>
-											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
-										</li>
-									</ul>
 								</div>
 							</li>
 							<li>
-								<h3>Adipsicing <span class="extra">feugiat</span></h3>
+								<h3>Frameworks</h3>
 								<div class="spotlight">
 									<ul>
 										<li>
-											<h4>Erat aliquam</h4>
-											<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
+											<h4>Content Management</h4>
+											<p>Inhalte einfach bearbeiten</p>
 										</li>
 										<li>
-											<h4>Neque veroeros</h4>
+											<h4>Bootstrap</h4>
 											<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
-										</li>
-									</ul>
-									<span class="image"><img src="images/pic02.jpg" alt="" /></span>
-									<ul>
-										<li>
-											<h4>Quis portitor</h4>
-											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
-										</li>
-										<li>
-											<h4>Magna accumsan</h4>
-											<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<h3>Magna <span class="extra">et accumsan</span></h3>
-								<div class="spotlight">
-									<ul>
-										<li>
-											<h4>Neque veroeros</h4>
-											<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
-										</li>
-										<li>
-											<h4>Quis portitor</h4>
-											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
 										</li>
 									</ul>
 									<span class="image"><img src="images/pic03.jpg" alt="" /></span>
@@ -173,25 +271,55 @@
 									</ul>
 								</div>
 							</li>
+							<li>
+								<h3>Weitere</h3>
+								<div class="spotlight">
+									<ul>
+										<li>
+											<h4>Linux server management</h4>
+											<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
+										</li>
+										<li>
+											<h4>Update service</h4>
+											<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+										</li>
+									</ul>
+									<span class="image"><img src="images/pic03.jpg" alt="" /></span>
+									<ul>
+										<li>
+											<h4>Internet of things (IoT)</h4>
+											<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
+										</li>
+										<li>
+											<h4>Erat aliquam</h4>
+											<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
+										</li>
+									</ul>
+								</div>
+							</li>
 						</ul>
 					</section>
 
 				<!-- Section -->
 					<section id="two" class="main accent2">
 						<header>
-							<h2>Etiam sed faucibus consequat</h2>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt magna accumsan.</p>
+							<h2>Unsere Philosophie</h2>
+							<p>Blabla</p>
 						</header>
+            <!-- 
 						<div class="inner">
-							<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-						</div>
+							<span class="image main"><img src="images/heilbronn_von_Wartberg.jpg" alt="" /></span>
+						</div> -->
 					</section>
 
+                <!-- Jumbotron -->
+                    <div class="jumbotron"></div>
+
 				<!-- Section -->
-					<section id="three" class="main alt">
+					<section id="three references" class="main alt">
 						<header>
-							<h2>Auctor nam sed aliquam</h2>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt magna accumsan.</p>
+							<h2>Referenzen</h2>
+							<p></p>
 						</header>
 						<div class="inner">
 							<div class="posts">
@@ -199,8 +327,8 @@
 									<article>
 										<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
 										<div class="content">
-											<h3>Blandit aliquam</h3>
-											<p>Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+											<h3>BackSnap</h3>
+											<p></p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
@@ -252,13 +380,59 @@
 							</div>
 						</div>
 					</section>
-
+        <!-- Section -->
+          <section id="four" class="main accent1">
+            <header id="kontakt">
+              <h2>Kontakt</h2>
+                <p>
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Telefon</label>
+                    <div class="col-sm-10">
+                      <input type="tel" class="form-control" id="inputPassword3">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Anfrage</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="form-group row">
+                    <label for=exampleFormControlFile1 class="col-sm-2 col-form-label">Datei</label>
+                    <div class="col-sm-10">
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1" style="background-color:white;color:black;">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Absenden</button>
+                    </div>
+                  </div>
+                </form>
+              </p>
+            </header>
+            <!-- 
+            <div class="inner">
+              <span class="image main"><img src="images/heilbronn_von_Wartberg.jpg" alt="" /></span>
+            </div> -->
+          </section>
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h3>Nullam sed gravida</h3>
-								<p>Phasellus ultrices sed nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus sed magna gravida non.</p>
+								<h3>Besuchen Sie uns</h3>
+								<p>Blabla</p>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -266,7 +440,7 @@
 								</ul>
 							</section>
 							<section class="narrow">
-								<h4>Lorem aliquam</h4>
+								<h4>Leistungen</h4>
 								<ul class="links">
 									<li><a href="#">Ultrices nulla</a></li>
 									<li><a href="#">Quis lectus donec</a></li>
@@ -277,23 +451,22 @@
 								</ul>
 							</section>
 							<section class="narrow">
-								<h4>Magna tempus</h4>
+								<h4>Ressourcen</h4>
 								<ul class="links">
-									<li><a href="#">Feugiat ligula</a></li>
-									<li><a href="#">Vulputate tristique</a></li>
-									<li><a href="#">Ultrices nulla</a></li>
-									<li><a href="#">Cursus sed magna</a></li>
-									<li><a href="#">Sed lectus donec</a></li>
+									<li><a href="#">Über uns</a></li>
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">Impressum</a></li>
+									<li><a href="#">Datenschutz</a></li>
 								</ul>
 							</section>
 							<section>
-								<h3>Morbi sed volutpat</h3>
-								<p>Sed vulputate sem tristique cursus sed magna gravida non lorem ipsum dolor sit amet.<p>
-								<p><a href="#" class="major">(000) 000-0000</a></p>
+								<h3>Kontaktieren Sie uns</h3>
+								<p>Direkt zum <a href="#kontakt" class="btn btn-link p-0" role="button" aria-pressed="true">Kontaktformular</a><p>
+								<!-- <p><a href="tel:+49070669192879" class="major text-nowrap">(0049) 7066 - 9192879</a></p> -->
 							</section>
 						</div>
 						<div class="copyright">
-							<p>&copy; Untitled. All rights reserved.</p>
+							<p>&copy; Snake-Soft. All rights reserved.</p>
 						</div>
 					</footer>
 
