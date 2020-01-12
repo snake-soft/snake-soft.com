@@ -15,6 +15,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
         <style>
 html {
   scroll-behavior: smooth;
@@ -40,12 +41,14 @@ html {
 #kontakt input, #kontakt textarea{color:#495057!important;}
         </style>
 
-
+<link rel="stylesheet" href="assets/highlight/styles/default.css">
+<script src="assets/highlight/highlight.pack.js"></script>
+<!-- <script>hljs.initHighlightingOnLoad();</script> -->
+        <script src="assets/js/banner.js"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header" class="alt">
 
@@ -89,8 +92,9 @@ html {
 					<section id="banner">
                       <div class="headjumbotron">
 						<div class="content primary">
-							<header style="background:rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);">
-                                <h1 class="mb-5"><img src="images/logo.png" class="w-75" style="max-width: 900px;"></img></h1>
+							<header>
+                                <code id="code_runner" class="text-left" style="float:left;white-space: pre-wrap;"></code>
+                                <h1 class=""><img src="images/logo.png" class="w-75 mb-5" style="max-width: 900px;background:rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);"></img></h1>
                                 <!-- 
 								<span style="background-color:white;">Snake-Soft(logo)<br />
 								die </span> -->
@@ -165,7 +169,7 @@ html {
 								<div class="spotlight">
 									<ul>
 										<li>
-											<h4>Codequalität</h4>
+											<h4>Was ist Python?</h4>
 											<p>Lesbare Syntax</p>
 											<p>Umfangreiche Standardbibliothek</p>
 											<p>Wiederverwendbarkeit</p>
@@ -173,11 +177,11 @@ html {
 											<p>Etabliert</p>
 										</li>
 										<li>
-											<h4>Dynamisch und modular</h4>
+											<h4>Warum Python?</h4>
 											<p>Erweiterbarkeit</p>
 										</li>
 									</ul>
-									<span class="image"><img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="" /></span>
+									<span class="image p"><img src="images/python_logo_only.png" alt="" /></span>
 									<ul>
 										<li>
 											<h4>Test-Infrastruktur</h4>
