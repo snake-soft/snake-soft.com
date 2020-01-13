@@ -23,4 +23,8 @@ urlpatterns = [
     path('', Home.as_view(), name='home'),
     path('kontakt/', admin.site.urls),
     path('impressum/', admin.site.urls),
+    path('webapplikationen/', Home.as_view(), name='webapplikationen'),
+    path('softwareentwicklung/', Home.as_view(), name='softwareentwicklung'),
+    path('prozessoptimierung/', Home.as_view(), name='prozessoptimierung'),
+    path('serververwaltung/', Home.as_view(), name='serververwaltung'),
 ]

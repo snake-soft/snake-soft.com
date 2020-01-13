@@ -599,13 +599,13 @@ function initialize_code(){
 async function float(){
 	for (var i = 0; i<text.length; i++){
 		$('#code_runner').append(text[i]);
-		if (text[i] == ' '){
+		if (text[i] == '\n'){
 			var code = $('#code_runner').text();
 			code = hljs.fixMarkup(code);
 			code = hljs.highlight('python', code).value
 			$('#code_runner').html(code);
 		}
-		await new Promise(resolve => setTimeout(resolve, 5));
+		await new Promise(resolve => setTimeout(resolve, 50));
 	}
 }
 
