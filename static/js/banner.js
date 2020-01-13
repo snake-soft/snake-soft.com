@@ -15,7 +15,21 @@ var text =
         # Go through keyword arguments, and either save their values to our
         # instance, or raise an error.
         for key, value in kwargs.items():
-            setattr(self, key, value)`;
+            setattr(self, key, value)
+
+    @classonlymethod
+    def as_view(cls, **initkwargs):
+        """Main entry point for a request-response process."""
+        for key in initkwargs:
+            if key in cls.http_method_names:
+                raise TypeError(
+                    'The method name %s is not accepted as a keyword argument '
+                    'to %s().' % (key, cls.__name__)
+                )
+            if not hasattr(cls, key):
+                raise TypeError("%s() received an invalid keyword %r. as_view "
+                                "only accepts arguments that are already "
+                                "attributes of the class." % (cls.__name__, key))`;
 
 function split_text_into_lines(text){
 	return text.split('\n');
