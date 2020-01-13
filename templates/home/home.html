@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block description %}{% endblock %}
+{% block keywords %}{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "highlight/styles/default.css" %}">
+<script src="{% static "highlight/highlight.pack.js" %}"></script>
+<style>
+/**
+#code_runner{
+  background:none!important;
+  border:none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+  overflow:scroll;
+  width: 100%;
+}**/
+#parallax{
+  margin-bottom: 0px;
+  background-image: url("{% static "images/heilbronn_von_Wartberg.jpg"%}");
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  height: 300px;
+}
+
+
+#jumbotron
+{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width:100%;
+  height:100vh;
+  background-color:#fbfbfb;
+  background-repeat:repeat;
+  overflow:hidden;
+-webkit-box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
+-moz-box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
+box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
+}
+
+</style>
+<script type="text/javascript">
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Banner -->
+<section id="jumbotron" class="jumbotron jumbotron-fluid p-0">
+  <div class="container-fluid p-0 w-100">
+      <div id="code_runner" class="p-1 w-100 align-text-bottom align-bottom" style="opacity: 0.5;left:0;bottom:0;white-space:pre-wrap;overflow:hidden;"></div>
+  </div>
+
+  <div class="container-fluid position-absolute" style="top:0;margin-top:30vh;">
+    <div id="logo" class="row">
+      <div class="col d-flex justify-content-center">
+        <h1><img src="{% static "images/logo.png" %}" class="w-100 mb-5" style="max-width: 900px;background:rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);"></img></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <a href="#produkte" class="btn btn-secondary btn-lg mx-auto" role="button" aria-pressed="true">
+          <i class="material-icons">keyboard_arrow_down</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="produkte" class="bt-1">{% include 'home/produkte.html' %}</section>
+<section id="werkzeuge">{% include 'home/werkzeuge.html' %}</section>
+<section id="philosophie"></section>
+<section id="parallax"></section>
+<section id="referenzen"></section>
+<section id="kontakt"></section>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="">
+  Tooltip on topasfas
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}{% csrf_token %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{% endblock %}" />
+  <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+  {% include 'base/head.html' %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <wrapper id="wrapper">
+    <header>
+      {% include 'base/nav.html' %}
+    </header>
+  
+    <main class="container-fluid">
+      <div class="row">
+        <div id="messages" class="col">
+          {% include 'base/message.html' %}
+        </div>
+      </div>
+      <div class="row">
+        <div id="content" class="col bg-white p-0">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </main>
+      
+    <footer>
+      {% include 'base/foot.html' %}
+    </footer>
+  </wrapper>
+</body>
+</html>
