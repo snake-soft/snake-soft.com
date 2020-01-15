@@ -1,19 +1,23 @@
 {% load static %}
-<!-- Section -->
-<!-- Classic tabs -->
-<ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul id="werkzeuge" style="padding-top:30px;margin-top: 70px;" class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link px-5 py-3 active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h3 class="mb-0">Python</h3></a>
+    <a class="nav-link px-5 py-3 active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+      <h3 class="mb-0">Python<i class="material-icons">keyboard_arrow_down</i></h3>
+    </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link px-5 py-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h3 class="mb-0">Django</h3></a>
+    <a class="nav-link px-5 py-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+      <h3 class="mb-0">Django<i class="material-icons">keyboard_arrow_down</i></h3>
+    </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link px-5 py-3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h3 class="mb-0">Webstandards</h3></a>
+    <a class="nav-link px-5 py-3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+      <h3 class="mb-0">Web<i class="material-icons">keyboard_arrow_down</i></h3>
+    </a>
   </li>
 </ul>
-<div class="tab-content bg-white" id="myTabContent">
-  <div class="tab-pane fade show p-5 active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<div class="tab-content bg-white" style="margin-bottom:5rem;" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-5 col-md-6 order-1 order-lg-1">
@@ -71,7 +75,7 @@
         <div class="col-12 col-lg-2 p-0 order-3 order-lg-2">
           <div class="container p-0">
             <div class="row h-100 p-0">
-              <div class="col d-table h-100 p-0">
+              <div class="col-6 col-lg-12 offset-3 offset-lg-0 d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
                   <img class="w-100" src="{% static "images/python_logo_only.png" %}" alt="" />
                 </span>
@@ -141,7 +145,7 @@
             <div class="row h-100 p-0">
               <div class="col d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
-                  <img class="w-100" src="{% static "images/python_logo_only.png" %}" alt="" />
+                  <img class="w-100" src="{% static "images/django-logo-negative.png" %}" alt="" />
                 </span>
               </div>         
             </div>         
@@ -208,12 +212,13 @@
             <div class="row h-100 p-0">
               <div class="col d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
-                  <img class="w-100" src="{% static "images/python_logo_only.png" %}" alt="" />
+                  <img class="w-100" src="{% static "images/HTML5_Badge_256.png" %}" alt="" />
                 </span>
               </div>         
             </div>         
           </div>         
         </div>        
       </div>         
-    </div>   </div>
-          </section>
+    </div>   
+  </div>
+</div>

@@ -9,62 +9,6 @@
 <link rel="stylesheet" href="{% static "highlight/styles/default.css" %}">
 <script src="{% static "highlight/highlight.pack.js" %}"></script>
 <style>
-/**
-#code_runner{
-  background:none!important;
-  border:none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  opacity: 0.3;
-  overflow:scroll;
-  width: 100%;
-}**/
-#parallax{
-  margin-bottom: 0px;
-  background-image: url("{% static "images/heilbronn_von_Wartberg.jpg"%}");
-  background-position: 0% 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-  height: 300px;
-}
-
-
-#jumbotron
-{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  width:100%;
-  height:100vh;
-  background-color:#fbfbfb;
-  background-repeat:repeat;
-  overflow:hidden;
--webkit-box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
--moz-box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
-box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
-}
-#produkte{
-white-space: break-spaces;
-}
-.material-icons{font-size: xxx-large;}
-/*
-.material-icons{
-width:100%;
-height:100%;
-border-radius: 100%;
-border: 1px solid grey;
-}
-i:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-*/
-
 </style>
 <script type="text/javascript">
 $(function () {
@@ -80,11 +24,17 @@ $(function () {
   <div class="container-fluid p-0 w-100">
       <div id="code_runner" class="p-1 w-100 align-text-bottom align-bottom" style="opacity: 0.5;left:0;bottom:0;white-space:pre-wrap;overflow:hidden;"></div>
   </div>
-
+  <!-- 
+  <div class="container-fluid p-0 w-100">
+      <div id="code_runner" class="p-1 w-100 align-text-bottom align-bottom" style="opacity: 0.5;left:0;bottom:0;white-space:pre-wrap;overflow:hidden;"></div>
+  </div>
+-->
   <div class="container-fluid position-absolute" style="top:0;margin-top:30vh;">
     <div id="logo" class="row">
       <div class="col d-flex justify-content-center">
-        <h1><img src="{% static "images/logo.png" %}" class="w-100 mb-5" style="max-width: 900px;background:rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);"></img></h1>
+        <h1><img src="{% static "images/logo.png" %}" class="w-100 mb-5"
+        style="max-width: 900px;background-color:white;-webkit-box-shadow: 0px 0px 15px 15px rgba(255,255,255,1);-moz-box-shadow: 0px 0px 15px 15px rgba(255,255,255,1);box-shadow: 0px 0px 15px 15px rgba(255,255,255,1);"></img>
+        </h1>
       </div>
     </div>
     <div class="row">
@@ -99,9 +49,23 @@ $(function () {
 </section>
 
 <section id="produkte" class="pt-5">{% include 'home/produkte.html' %}</section>
-<section id="werkzeuge" class="bg-secondary p-5">{% include 'home/werkzeuge.html' %}</section>
-<section id="philosophie"></section>
-<section id="parallax"></section>
-<section id="referenzen"></section>
-<section id="kontakt"></section>
+<section class="bg-secondary p-5">{% include 'home/werkzeuge.html' %}</section>
+<section id="parallax" style="background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');"></section>
+<section id="philosophie" class="text-center py-5" style="background-color:#80bb2d;">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="my-5" style="color:white;">Unsere Leitsätze</h2>
+      <ul class="list-group list-group-flush m-5">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="referenzen" class="p-5">{% include 'home/referenzen.html' %}</section>
+<section id="kontakt" class="bg-secondary p-5">{% include 'home/kontakt.html' %}</section>
+<section class="placeholder" style="height:150px;"></section>
 {% endblock %}

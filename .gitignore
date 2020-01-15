@@ -1,0 +1,6 @@
+/templatesBAK/
+*.pyc
+*/__pycache__/
+/.directory
+/.project
+/.pydevproject
