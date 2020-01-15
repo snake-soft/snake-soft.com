@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.contrib.messages import constants as message_constants
+from .config import SECRET_KEY, DEBUG, ALLOWED_HOSTS
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=j2#df8hnxa7$e2ou(q7xj!clrmqj9xhib50%31u6(wx6k3x)v'
+#SECRET_KEY = '=j2#df8hnxa7$e2ou(q7xj!clrmqj9xhib50%31u6(wx6k3x)v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'nec-li', 'snake-soft.com']
+#ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'nec-li', 'snake-soft.com']
 
 
 # Application definition

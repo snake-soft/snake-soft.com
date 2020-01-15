@@ -4,3 +4,4 @@ __pycache__
 /.directory
 /.project
 /.pydevproject
+/config/config.py
