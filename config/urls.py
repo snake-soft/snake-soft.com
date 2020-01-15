@@ -16,15 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from home.views import Home
-
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home.as_view(), name='home'),
-    path('kontakt/', admin.site.urls),
-    path('impressum/', admin.site.urls),
-    path('webapplikationen/', Home.as_view(), name='webapplikationen'),
-    path('softwareentwicklung/', Home.as_view(), name='softwareentwicklung'),
-    path('prozessoptimierung/', Home.as_view(), name='prozessoptimierung'),
-    path('serververwaltung/', Home.as_view(), name='serververwaltung'),
+    path('impressum/', Home.as_view(), name='impressum'),
+    path('datenschutz/', Home.as_view(), name='datenschutz'),
+    path('karriere/', Home.as_view(), name='karriere'),
+    path('ueber-uns/', Home.as_view(), name='ueberuns'),
+    path('kontakt/', RedirectView.as_view(url='/#kontakt'), name='kontakt'),
+    path('produkt/webapplikationen/', Home.as_view(), name='webapplikationen'),
+    path('produkt/softwareentwicklung/', Home.as_view(), name='softwareentwicklung'),
+    path('produkt/prozessoptimierung/', Home.as_view(), name='prozessoptimierung'),
+    path('produkt/serververwaltung/', Home.as_view(), name='serververwaltung'),
+    path('technologie/django-webentwicklung/', Home.as_view(), name='django'),
+    path('technologie/python-softwareentwicklung/', Home.as_view(), name='python'),
+    path('technologie/webdesign-webtechnologie/', Home.as_view(), name='web'),
 ]

@@ -81,27 +81,13 @@ white-space: break-spaces;
 }
 #produkte .material-icons{font-size: xxx-large;}
 
-#werkzeuge i{color: #23b1ec;} 
-#werkzeuge .active i{color: unset;}
+#technologien i{color: #23b1ec;} 
+#technologien .active i{color: unset;}
 
 .socials{padding:0; list-style-type:none; font-size:x-large;}
 .socials li{float:left;padding: 10px;}
 
 
-.custom-ul {
-  list-style: none;
-  padding: 0;
-}
-.custom-ul li {
-  padding-left: 1.3em;
-}
-.custom-ul li:before {
-  content: "\f054"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  display: inline-block;
-  margin-left: -1.3em; /* same as padding-left set on li */
-  width: 1.3em; /* same as padding-left set on li */
-}
 /*
 .material-icons{
 width:100%;

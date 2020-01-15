@@ -1,43 +1,130 @@
-<div class="container-fluid">
+<div class="container mx-auto">
   <div class="row">
-    <div class="col">
+    <div class="col-12 col-sm-6 col-md-3">
       <h3>Besuchen Sie uns</h3>
-      <p>Blabla</p>
+      <p>auf unseren sozialen Kanälen</p>
       <ul class="socials">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/snake-soft/"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>
-    <div class="col">
-    <h4>Leistungen</h4>
-    <ul class="links custom-ul" style="list-style-type:none;padding:0;">
-      <li><a href="#">Ultrices nulla</a></li>
-      <li><a href="#">Quis lectus donec</a></li>
-      <li><a href="#">Magna ligula</a></li>
-      <li><a href="#">Sed etiam tristique</a></li>
-      <li><a href="#">Cursus magna</a></li>
-      <li><a href="#">Gravida dolore</a></li>
-    </ul>
+    <div class="col-12 col-sm-6 col-md-3">
+      <h4>Produkte</h4>
+      <ul class="links fa-ul" style="list-style-type:none;padding:0;">
+        <li>
+          <a href="{% url 'webapplikationen' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Webapplikationen
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'softwareentwicklung' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Softwareentwicklung
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'prozessoptimierung' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Prozessoptimierung
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'serververwaltung' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Serververwaltung
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="col">
-    <h4>Ressourcen</h4>
-    <ul class="links custom-ul" style="list-style-type:none;padding:0;">
-      <li><a href="#">Über uns</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Impressum</a></li>
-      <li><a href="#">Datenschutz</a></li>
-    </ul>
+    <div class="col-12 col-sm-6 col-md-3">
+      <h4>Technologien</h4>
+      <ul class="links fa-ul" style="list-style-type:none;padding:0;">
+        <li>
+          <a href="{% url 'django' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Django
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'python' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Python
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'web' %}" class="btn btn-link p-0">
+          <span class="fa-li" style="top:4px;">
+            <i class="fas fa-caret-right"></i>
+          </span>Webtechnologien</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <h4>Ressourcen</h4>
+      <ul class="links fa-ul" style="list-style-type:none;padding:0;">
+        <li>
+          <a href="{% url 'ueberuns' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Über uns
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'kontakt' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Kontakt
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'karriere' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Karriere
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'impressum' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Impressum
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'datenschutz' %}" class="btn btn-link p-0">
+            <span class="fa-li" style="top:4px;">
+              <i class="fas fa-caret-right"></i>
+            </span>
+            Datenschutz
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="row mx-auto">
     <div class="col text-center">
-      <p>&copy; Snake-Soft. All rights reserved.</p>
+      <p class="my-2">&copy; Snake-Soft. All rights reserved.</p>
     </div>
   </div>
 </div>
-
-
 
