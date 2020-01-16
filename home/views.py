@@ -17,7 +17,7 @@ def get_random_module():
         def read(self):
             with open(self.path, 'r') as file:
                 data = file.read()
-            data = data.replace('`', "'")
+            data = data.replace('`', r"\`")
             return data
 
     path = __import__('django').__path__[0]
