@@ -1,20 +1,22 @@
-import os 
-from git import Repo as GitRepo  #, GitRemote
+import subprocess as sp
 from time import sleep
 
-repo = GitRepo(path=os.path.dirname(os.path.realpath(__file__)))
-
-
-def execute(cmd):
+def execute(cmd, directory):
     o, e = sp.Popen(# o = output, e = error
-        cmd, shell=True, stdout=sp.PIPE, stderr=sp.STDOUT
+        cmd,
+        shell=True,
+        stdout=sp.PIPE,
+        stderr=sp.STDOUT,
+        cwd=directory
     ).communicate()
-    return
+    return o.decode("utf-8").splitlines()
     
 
 
 while True:
-    result = repo.remotes.origin.pull()
-    if result[0].ERROR:
-        print(result[0].ERROR)
+    directory = '/var/www/snake-soft.com'
+    result = execute('su www-data -c "git pull"', directory)
+    if result[0] != u'Bereits aktuell.':
+        result = execute('/etc/init.d/apache2 reload', directory)
+    print(result)
     sleep(10)
