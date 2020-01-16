@@ -112,6 +112,7 @@ white-space: break-spaces;
 -moz-box-shadow: 5px 5px 10px 0px rgba(143,143,143,1);
 box-shadow: 5px 5px 10px 0px rgba(143,143,143,1);
 border-bottom: 3px solid brown;
+z-index: 100;
 }
 /*
 .material-icons{
