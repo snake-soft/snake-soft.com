@@ -29,6 +29,7 @@ def get_random_module():
             file.path = os.path.join(root, filename)
             file.size = os.path.getsize(file.path)
             file.classpath = 'django' + file.path[len(path):-3].replace('/', '.')
+            file.classpath = file.classpath.lower()
             if file.name.endswith(".py") \
                 and file.name != '__init__.py' \
                     and 5000 < file.size < 10000:  # bytes
@@ -36,8 +37,6 @@ def get_random_module():
 
     while djangofiles:
         random_file = djangofiles[randint(0, len(djangofiles)-1)]
-        if '`' in random_file.read():
-            print("HAAAHAAA1")
         if random_file.read():
             return random_file
         print(random_file.path)
