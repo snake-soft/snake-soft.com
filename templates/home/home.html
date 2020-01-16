@@ -11,15 +11,41 @@
 <style>
 </style>
 <script type="text/javascript">
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip()
-})
+var text = `{{random_file.read | safe }}`;
+async function float(){
+	for (var i = 0; i<text.length; i++){
+		$('#code_runner').append(text[i]);
+		if (text[i] == '\n'){
+			var code = $('#code_runner').text();
+			code = hljs.fixMarkup(code);
+			code = hljs.highlight('python', code).value
+			$('#code_runner').html(code);
+		}
+		await new Promise(resolve => setTimeout(resolve, 50));
+	}
+}
 
+$(document).ready(function() {
+	//var obj = $('#code_runner')
+	//var code = hljs.highlight('python', obj.html()).value;
+	//obj.html(hljs.fixMarkup(code)); 
+	//$('#code_runner').append(text);//hljs.highlight('python', text).value);
+	$('[data-toggle="tooltip"]').tooltip();
+	float();
+});
 </script>
+<script src="{% static "js/banner.js" %}"></script>
 {% endblock %}
 
 {% block content %}
+
 <!-- Banner -->
+  <div id="nowplaying" class="container position-absolute d-none d-sm-block" style="" title="{{random_file.size}} bytes">
+    <div class="row mx-auto">Now playing:</div>
+    <div class="row mx-auto" style="text-align:justify;">
+      <span style="display:inline-block;width:100%;"><small>{{random_file.classpath}}</small></span>
+    </div>
+  </div>
 <section id="jumbotron" class="jumbotron jumbotron-fluid p-0 m-0">
   <div class="container-fluid p-0 w-100">
       <div id="code_runner" class="p-1 w-100 align-text-bottom align-bottom" style="opacity: 0.5;left:0;bottom:0;white-space:pre-wrap;overflow:hidden;"></div>
@@ -47,8 +73,9 @@ $(function () {
   </div>
   {% include 'base/nav.html' %}
 </section>
-
-<section id="produkte" class="pt-5">{% include 'home/produkte.html' %}</section>
+<section id="produkte" class="pt-5">
+  {% include 'home/produkte.html' %}
+</section>
 <section class="bg-secondary p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">{% include 'home/technologien.html' %}</section>
 <section id="parallax" style="background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');"></section>
 <section id="philosophie" class="text-center py-5" style="background-color:#80bb2d;">
