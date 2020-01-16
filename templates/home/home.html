@@ -6,35 +6,8 @@
 {% block keywords %}Webanwendungen,Wordpress,Django,Python,cms,djangocms,Webapplikationen,Softwareentwicklung,Prozessoptimierung,Serververwaltung{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "highlight/styles/default.css" %}">
-<script src="{% static "highlight/highlight.pack.js" %}"></script>
 <style>
 </style>
-<script type="text/javascript">
-var text = `{{random_file.read | safe }}`;
-async function float(){
-	for (var i = 0; i<text.length; i++){
-		$('#code_runner').append(text[i]);
-		if (text[i] == '\n'){
-			var code = $('#code_runner').text();
-			code = hljs.fixMarkup(code);
-			code = hljs.highlight('python', code).value
-			$('#code_runner').html(code);
-		}
-		await new Promise(resolve => setTimeout(resolve, 50));
-	}
-}
-
-$(document).ready(function() {
-	//var obj = $('#code_runner')
-	//var code = hljs.highlight('python', obj.html()).value;
-	//obj.html(hljs.fixMarkup(code)); 
-	//$('#code_runner').append(text);//hljs.highlight('python', text).value);
-	$('[data-toggle="tooltip"]').tooltip();
-	float();
-});
-</script>
-<script src="{% static "js/banner.js" %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -77,7 +50,7 @@ $(document).ready(function() {
   {% include 'home/produkte.html' %}
 </section>
 <section class="bg-secondary p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">{% include 'home/technologien.html' %}</section>
-<section id="parallax" style="background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');"></section>
+<section id="parallax" class="lazyload" style="background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');"></section>
 <section id="philosophie" class="text-center py-5" style="background-color:#80bb2d;">
 <div class="container">
   <div class="row">

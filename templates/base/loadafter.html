@@ -1,0 +1,33 @@
+<link async defer href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
+
+
+<!-- Highlight.js -->
+<link async rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+
+
+<script type="text/javascript">
+var text = `{{random_file.read | safe }}`;
+async function float(){
+  await new Promise(resolve => setTimeout(resolve, 500));
+  for (var i = 0; i<text.length; i++){
+    $('#code_runner').append(text[i]);
+    if (text[i] == '\n'){
+      var code = $('#code_runner').text();
+      code = hljs.fixMarkup(code);
+      code = hljs.highlight('python', code).value
+      $('#code_runner').html(code);
+    }
+    await new Promise(resolve => setTimeout(resolve, 50));
+  }
+}
+
+$(document).ready(function() {
+  //var obj = $('#code_runner')
+  //var code = hljs.highlight('python', obj.html()).value;
+  //obj.html(hljs.fixMarkup(code)); 
+  //$('#code_runner').append(text);//hljs.highlight('python', text).value);
+    $('[data-toggle="tooltip"]').tooltip();
+    float();
+});
+</script>
