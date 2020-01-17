@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Snake &#10711; Soft - Time is more than money{% endblock %}
+{% block title %}Time is more than money{% endblock %}
 {% block description %}Die Agentur für Django Webanwendungen in Heilbronn, Baden-Württemberg, Deutschland, Europa und der Welt.{% endblock %}
 {% block keywords %}Webanwendungen,Wordpress,Django,Python,cms,djangocms,Webapplikationen,Softwareentwicklung,Prozessoptimierung,Serververwaltung,Websites{% endblock %}
 
@@ -60,12 +60,12 @@
         <li class="list-group-item">Das Produkt wird umso besser, je detailreicher <strong>Ihre</strong> Vision es ausmalt.</li>
         <li class="list-group-item">Wir verstehen uns nicht als Marketing-, Wordpress-, oder Werbeagentur.</li>
         <li class="list-group-item">Wir erschaffen Web-<strong>Anwendungen</strong>!</li>
+        <a href="{% url 'philosophie' %}" class="btn btn-link text-white mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr über Software und Web</a>
       </ul>
     </div>
   </div>
 </div>
 </section>
-<section id="referenzen" class="p-5">{% include 'home/referenzen.html' %}</section>
-<section id="kontakt" class="bg-secondary p-5">{% include 'home/kontakt.html' %}</section>
-<section class="placeholder" style="height:150px;"></section>
+<section id="referenzen" class="p-5 m-5">{% include 'home/referenzen.html' %}</section>
+<section id="kontakt" class="bg-secondary p-5">{% include 'content/kontakt.html' %}</section>
 {% endblock %}

@@ -88,12 +88,12 @@
           </div>         
         </div>  
         <div class="col-12 col-lg-2 p-0 order-3 order-lg-2">
-          <div class="container p-0">
+          <div class="container p-0 h-100">
             <div class="row h-100 p-0">
               <div class="col d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
                   <img class="w-100 lazyload" src="{% static "images/django-logo-negative.png" %}" alt="" />
-                  <a href="#" class="btn btn-link mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr lesen</a>
+                  <a href="{% url 'django' %}" class="btn btn-link mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr über Django</a>
                 </span>
               </div>         
             </div>         
@@ -176,12 +176,12 @@
           </div>         
         </div>  
         <div class="col-12 col-lg-2 p-0 order-3 order-lg-2">
-          <div class="container p-0">
+          <div class="container p-0 h-100">
             <div class="row h-100 p-0">
               <div class="col-6 col-lg-12 offset-3 offset-lg-0 d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
                   <img class="w-100 lazyload" src="{% static "images/python_logo_only.png" %}" alt="" />
-                  <a href="#" class="btn btn-link mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr lesen</a>
+                  <a href="{% url 'python' %}" class="btn btn-link mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr über Python</a>
                 </span>
               </div>         
             </div>         
@@ -250,11 +250,12 @@
           </div>
         </div>
         <div class="col-12 col-lg-2 p-0 order-3 order-lg-2">
-          <div class="container p-0">
+          <div class="container p-0 h-100">
             <div class="row h-100 p-0">
               <div class="col d-table h-100 p-0">
                 <span class="d-table-cell h-100 p-3 text-center align-middle">
-                  <i class="fas fa-fw fa-globe" style="font-size:150;color:grey;"></i>
+                  <i class="fas fa-fw fa-globe" style="font-size:150px;color:grey;"></i>
+                  <a href="{% url 'web' %}" class="btn btn-link mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr über Webdesign</a>
                 </span>
               </div>         
             </div>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<style>
+main{
+  margin-bottom: 0px;
+  background-position: 0% 25%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');
+}
+#inner-content{word-wrap: break-word;}
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="inner-content" class="container my-5 border shadow p-5 bg-white" style="min-height: 500px;">
+  <div class="row">
+    <div class="col">
+      {% block inner %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
+<section class="placeholder" style="height:150px;"></section>
+{% endblock %}

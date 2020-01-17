@@ -1,8 +1,8 @@
-{% load static %}{% csrf_token %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}{% endblock %}</title>
+  <title>Snake &#10711; Soft - {% block title %}{% endblock %}</title>
   <meta name="description" content="{% block description %}{% endblock %}" />
   <meta name="keywords" content="{% block keywords %}{% endblock %}" />
   {% include 'base/head.html' %}
@@ -21,13 +21,13 @@
         </div>
       </div>
       <div class="row">
-        <div id="content" class="col bg-white p-0">
+        <div id="content" class="col p-0">
           {% block content %}{% endblock %}
         </div>
       </div>
     </main>
-      
-    <footer>
+    <section class="placeholder bg-white" style="height:150px;"></section>
+    <footer class="bg-white">
       {% include 'base/foot.html' %}
     </footer>
   </wrapper>
