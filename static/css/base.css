@@ -72,8 +72,8 @@ white-space: break-spaces;
 #produkte i::before{
 	font-size:100;
 }
-#technologien i{color: #23b1ec;} 
-#technologien .active i{color: unset;}
+#technologieTab i{color: #23b1ec;} 
+#technologieTab .active i{color: unset;}
 
 .socials{padding:0; list-style-type:none; font-size:x-large;}
 .socials li{float:left;padding: 10px;}
