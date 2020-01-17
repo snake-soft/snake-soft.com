@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Snake &#10711; Soft - {% block title %}{% endblock %}</title>
   <meta name="description" content="{% block description %}{% endblock %}" />
@@ -13,7 +13,6 @@
 </head>
 <body>
 {% include 'cookie_agreement.html' %}
-  <wrapper id="home">
     <header>
       {% include 'base/nav.html' %}
     </header>
@@ -29,11 +28,10 @@
         </div>
       </div>
     </main>
-    <section class="placeholder bg-white" style="height:150px;"></section>
+    <div class="placeholder bg-white" style="height:150px;"></div>
     <footer class="bg-white">
       {% include 'base/foot.html' %}
     </footer>
-  </wrapper>
 {% include 'base/loadafter.html' %}
 </body>
 </html>
