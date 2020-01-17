@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'cookie_policy',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -131,3 +133,8 @@ MESSAGE_TAGS = {
     message_constants.DEBUG: 'dark'
     }
 MESSAGE_LEVEL = message_constants.DEBUG
+
+
+COOKIE_POLICY_URL = '/datenschutz/'
+
+

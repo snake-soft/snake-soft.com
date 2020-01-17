@@ -7,13 +7,16 @@
   <meta name="keywords" content="{% block keywords %}{% endblock %}" />
   {% include 'base/head.html' %}
   {% block head %}{% endblock %}
+  
+<link href="{% static 'cookie_agreement/cookie.css'%}" rel="stylesheet">
+<script src="{% static 'cookie_agreement/cookie.js' %}"></script>
 </head>
 <body>
+{% include 'cookie_agreement.html' %}
   <wrapper id="home">
     <header>
       {% include 'base/nav.html' %}
     </header>
-  
     <main class="container-fluid">
       <div class="row">
         <div id="messages" class="col">
