@@ -16,8 +16,9 @@ def execute(cmd, directory):
 
 directory = '/var/www/snake-soft.com'
 result = execute('su www-data -c "git pull"', directory)
-result = execute('su www-data -c "venv/bin/python manage.py collectstatic --noinput"', directory)
 print(result)
 if result[0] != u'Bereits aktuell.':
+    result = execute('su www-data -c "venv/bin/python manage.py collectstatic --noinput"', directory)
+    print(result)
     result = execute('/etc/init.d/apache2 reload', directory)
     print(result)
