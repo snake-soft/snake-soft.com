@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from home.views import Home
+from home.views import Home, TemplateView
 from django.views.generic.base import RedirectView
+from django.contrib.sitemaps.views import sitemap
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,4 +35,8 @@ urlpatterns = [
     path('technologie/django-webentwicklung/', RedirectView.as_view(url='/'), name='django'),
     path('technologie/python-softwareentwicklung/', RedirectView.as_view(url='/'), name='python'),
     path('technologie/webdesign-webtechnologie/', RedirectView.as_view(url='/'), name='web'),
+    
+    
+    path('robots.txt', TemplateView.as_view(template_name="base/robots.txt", content_type='text/plain')),
+    path('sitemap.xml', TemplateView.as_view(template_name="base/sitemap.xml", content_type='text/plain')),
 ]
