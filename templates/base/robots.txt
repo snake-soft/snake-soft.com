@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /accounts/
-Sitemap: http://snake-soft.com/sitemap.xml.
+Sitemap: https://snake-soft.com/sitemap.xml
