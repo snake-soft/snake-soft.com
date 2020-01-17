@@ -5,3 +5,4 @@ __pycache__
 /.project
 /.pydevproject
 /config/config.py
+/db.sqlite3

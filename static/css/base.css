@@ -122,3 +122,11 @@ i:before{
     padding-top: 100%;
 }
 */
+
+#inner-content ul {
+}
+#inner-content li {
+}
+#inner-content li::before{
+}
+

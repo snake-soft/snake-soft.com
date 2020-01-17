@@ -1,6 +1,7 @@
 import subprocess as sp
 from time import sleep
 
+
 def execute(cmd, directory):
     o, e = sp.Popen(# o = output, e = error
         cmd,
@@ -10,7 +11,7 @@ def execute(cmd, directory):
         cwd=directory
     ).communicate()
     return o.decode("utf-8").splitlines()
-    
+
 
 
 directory = '/var/www/snake-soft.com'
