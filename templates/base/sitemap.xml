@@ -2,61 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://snake-soft.com/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://snake-soft.com/produkt/webapplikationen/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.6</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/produkt/softwareentwicklung/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.5</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/produkt/prozessoptimierung/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.4</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/produkt/serververwaltung/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://snake-soft.com/technologie/django-webentwicklung/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.8</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/technologie/python-softwareentwicklung/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.6</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/technologie/webdesign-webtechnologie/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://snake-soft.com/kontakt/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.8</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/ueber-uns/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.2</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/karriere/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.2</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/impressum/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.0</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/datenschutz/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.0</priority>
   </url>
   <url>
     <loc>https://snake-soft.com/software-webdesign-wordpress-philosophie/</loc>
-    <lastmod>2020-01-20</lastmod>
+    <lastmod>2020-01-18</lastmod>
+    <changefreq>daily</changefreq>
+  	<priority>0.5</priority>
   </url>
 </urlset>
