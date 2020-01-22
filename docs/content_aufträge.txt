@@ -1,0 +1,48 @@
+### https://snake-soft.com/produkt/webapplikationen/
+Sehr geehrter Auftragnehmer,
+
+wir sind ein Startup im Bereich Softwareentwicklung und Webapplikationen in Python und Django.
+Wir bieten ausschließlich digitale Dienstleistungen an.
+Unsere Kunden sind Visionäre, sowie Kleine und Mittelständische Unternehmen.
+Wir sehen uns nicht als klassische Werbeagentur sondern als Umsetzer konkreter Visionen.
+
+Bitte berücksichtigen sie dies bei der Erstellung der Texte.
+
+Inhalt dieses Auftrags ist das Erstellen der Texte für die Seite:
+https://snake-soft.com/produkt/webapplikationen/
+
+Produktbeschreibung:
+Komplexe und dynamische Webapplikationen / Websites / Webanwendungen.
+Erst beim weiteren lesen auf der Startseite wird der Leser konkret auf die Technologien stoßen, welche wir bevorzugt einsetzen.
+Bitte erwähnen sie diese nicht im Text: Python, Django.
+Es gibt absichtlich auf dieser Seite keine keyword Vorgaben.
+Kundenakzeptanz ist wichtiger als die Ausrichtung auf keywords.
+
+Mit freundlichen Grüßen
+Frank Hennige
+
+
+
+### https://snake-soft.com/produkt/softwareentwicklung/
+Sehr geehrter Auftragnehmer,
+
+wir sind ein Startup im Bereich Softwareentwicklung und Webapplikationen in Python und Django.
+Wir bieten ausschließlich digitale Dienstleistungen an.
+Unsere Kunden sind Visionäre, sowie Kleine und Mittelständische Unternehmen.
+Wir sehen uns nicht als klassische Werbeagentur sondern als Umsetzer konkreter Visionen.
+
+Bitte berücksichtigen sie dies bei der Erstellung der Texte.
+
+
+Inhalt dieses Auftrags ist das Erstellen der Texte für die Seite:
+https://snake-soft.com/produkt/softwareentwicklung/
+
+Produktbeschreibung:
+Anwendungen jeder Art, .
+Diese Seite soll den Leser mit diesem Produkt vertraut machen, ohne ihn bereits zu sehr auf python "festzunageln".
+Erst beim weiteren lesen auf der Startseite wird der Leser konkret auf die Technologien stoßen, welche wir bevorzugt einsetzen.
+Es gibt absichtlich auf dieser Seite keine keyword Vorgaben.
+Kundenakzeptanz ist wichtiger als die Ausrichtung auf keywords.
+
+Mit freundlichen Grüßen
+Frank Hennige
