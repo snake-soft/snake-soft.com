@@ -38,7 +38,6 @@ urlpatterns = [
     path('technologie/python-softwareentwicklung/', TemplateView.as_view(template_name="technologie/python.html"), name='python'),
     path('technologie/webdesign-webtechnologie/', TemplateView.as_view(template_name="technologie/web.html"), name='web'),
 
-
     path('robots.txt', TemplateView.as_view(template_name="base/robots.txt", content_type='text/plain')),
     path('sitemap.xml', TemplateView.as_view(template_name="base/sitemap.xml", content_type='text/plain')),
 
