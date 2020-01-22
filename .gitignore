@@ -1,8 +1,8 @@
 /templatesBAK/
 *.pyc
 __pycache__
-/.directory
 /.project
 /.pydevproject
 /config/config.py
 /db.sqlite3
+.directory
