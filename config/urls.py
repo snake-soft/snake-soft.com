@@ -43,5 +43,5 @@ urlpatterns = [
     path('sitemap.xml', TemplateView.as_view(template_name="base/sitemap.xml", content_type='text/plain')),
 
     path('cookie/policy/', include('cookie_policy.urls')),
-    path('assistant/', RedirectView.as_view(url=reverse_lazy('home')), name='assistant'),
+    path('assistant/', RedirectView.as_view(url=reverse_lazy('kontakt')), name='assistant'),
 ]
