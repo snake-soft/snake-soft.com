@@ -18,6 +18,7 @@ from django.urls import path, include
 from home.views import Home, TemplateView
 from django.views.generic.base import RedirectView
 from django.contrib.sitemaps.views import sitemap
+from django.urls import reverse_lazy
 
 
 urlpatterns = [
@@ -42,4 +43,5 @@ urlpatterns = [
     path('sitemap.xml', TemplateView.as_view(template_name="base/sitemap.xml", content_type='text/plain')),
 
     path('cookie/policy/', include('cookie_policy.urls')),
+    path('assistant/', RedirectView.as_view(url=reverse_lazy('home')), name='assistant'),
 ]
