@@ -16,7 +16,7 @@
    width="89mm"
    height="59mm"
    viewBox="0 0 336.37794 222.99212"
-   sodipodi:docname="visitenkarte_vorneFINISH.svg"
+   sodipodi:docname="visitenkarte_hinten_FINISH.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -24,7 +24,7 @@
      id="defs6"><color-profile
        name="PSO-Uncoated-v3--FOGRA52-"
        xlink:href="/usr/share/color/icc/PSOuncoated_v3_FOGRA52.icc"
-       id="color-profile4" /><clipPath
+       id="color-profile3" /><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath24"><path
          d="M 0,167.244 H 252.284 V 0 H 0 Z"
@@ -53,12 +53,12 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="2.1166678"
-     inkscape:cx="185.14966"
-     inkscape:cy="54.769507"
+     inkscape:cx="142.39377"
+     inkscape:cy="111.46239"
      inkscape:window-x="3840"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1078"
+     inkscape:current-layer="layer9"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:snap-global="true"
@@ -106,7 +106,7 @@
      id="layer8"
      inkscape:label="Schnittkanten"
      style="display:none"
-     transform="translate(0,1.0909433e-4)"><g
+     transform="translate(0,1.1534202e-4)"><g
        sodipodi:insensitive="true"
        style="display:none"
        transform="matrix(1.3333333,0,0,-1.3333333,0,222.992)"
@@ -886,7 +886,7 @@
      id="g10"
      inkscape:groupmode="layer"
      inkscape:label="Original_85x55mm_landscape_2s"
-     transform="matrix(1.3333333,0,0,-1.3333333,0,222.99211)"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,222.99212)"
      style="display:none"
      sodipodi:insensitive="true"><path
        d="M 0,0 H 252.283 V 167.243 H 0 Z"
@@ -1254,8 +1254,8 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="Vorderseite"
-     style="display:inline"
-     transform="translate(0,1.0909433e-4)"><g
+     style="display:none"
+     transform="translate(0,1.1534202e-4)"><g
        inkscape:groupmode="layer"
        id="layer1"
        inkscape:label="logo"
@@ -1350,7 +1350,6 @@
      x="198.57744"
      y="168.00114"
      style="font-size:8px" /></text>
-
 
 
 
@@ -1876,8 +1875,8 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="Rückseite"
-     style="display:none"
-     transform="translate(0,1.0909433e-4)"><g
+     style="display:inline"
+     transform="translate(0,1.1534202e-4)"><g
    transform="matrix(0.33703432,0,0,0.33703432,214.6247,177.43264)"
    id="layer1-3"
    inkscape:label="Ebene 1"><path
