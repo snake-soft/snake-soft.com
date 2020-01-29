@@ -9,7 +9,7 @@ Wir sehen uns nicht als klassische Werbeagentur sondern als Umsetzer konkreter V
 Bitte berücksichtigen sie dies bei der Erstellung der Texte.
 
 Inhalt dieses Auftrags ist das Erstellen der Texte für die Seite:
-https://snake-soft.com/produkt/webapplikationen/
+https://snake-soft.com/produkt/prozessoptimierung/
 
 Produktbeschreibung:
 Komplexe und dynamische Webapplikationen / Websites / Webanwendungen.
@@ -18,8 +18,19 @@ Bitte erwähnen sie diese nicht im Text: Python, Django.
 Es gibt absichtlich auf dieser Seite keine keyword Vorgaben.
 Kundenakzeptanz ist wichtiger als die Ausrichtung auf keywords.
 
+Bitte 
+
 Mit freundlichen Grüßen
 Frank Hennige
+
+
+
+
+
+
+
+
+
 
 
 
