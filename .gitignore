@@ -6,3 +6,5 @@ __pycache__
 /config/config.py
 /db.sqlite3
 .directory
+/project.db
+/.settings/
