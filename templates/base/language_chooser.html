@@ -1,0 +1,18 @@
+{% load i18n menu_tags %}
+{% if languages|length > 1 %}
+<li class="nav-item dropdown text-center">
+  <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ current_language }}
+  </a>
+  <div class="dropdown-menu" aria-labelledby="languageDropdown">
+    {% for language in languages %}
+      {% if current_language != language.0 %}
+          <a class="dropdown-item" href="{% page_language_url language.0 %}" title="{% trans "Change to language:" %} {{ language.1 }}">{{ language.1 }}</a>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</li>
+ 
+
+{% endif %}

@@ -168,3 +168,7 @@ i:before{
 	line-height:1;
 	padding:0;
 }
+
+/* DJANGOCMS TOOLBAR*/
+.cms-toolbar-item-logo{display:none;}
+

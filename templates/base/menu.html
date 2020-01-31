@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index:100;left: unset;">
+{% load cms_tags menu_tags sekizai_tags %}
+<nav class="navbar navbar-expand-lg navbar-light" style="z-index:100;top:10px;right:0;position:fixed;">
   <button class="navbar-toggler ml-auto bg-light" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,25 +8,23 @@
       <li class="nav-item ml-auto w-100 text-center">
         <a class="nav-link" href="/#home">Home</a>
       </li>
-{% for child in children %}
-  {% if child.children %}
-      <li class="nav-item dropdown text-center">
-        <a class="nav-link dropdown-toggle" href="#" id="produkteDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{ child.get_menu_title }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="produkteDropdown">
-          <a class="dropdown-item" href="/#{{ child.get_menu_title|lower }}">Übersicht</a>
-          <div class="dropdown-divider"></div>
-          {% for entry in child.children %}
-                <a class="dropdown-item" href="{{ entry.get_absolute_url }}">{{ entry.get_menu_title }}</a>
-          {% endfor %}
-        </div>
-      </li>
-  {% endif %}
-{% endfor %}
-      <li class="nav-item ml-auto w-100 text-center">
-        <a class="nav-link" href="{% url 'home' %}#kontakt">Kontakt</a>
-      </li>
+      {% for child in children %}
+        {% if child.children %}
+            <li class="nav-item dropdown text-center">
+              <a class="nav-link dropdown-toggle" href="#" id="produkteDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ child.get_menu_title }}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="produkteDropdown">
+                <a class="dropdown-item" href="/#{{ child.get_menu_title|lower }}">Übersicht</a>
+                <div class="dropdown-divider"></div>
+                {% for entry in child.children %}
+                  <a class="dropdown-item" href="{{ entry.get_absolute_url }}">{{ entry.get_menu_title }}</a>
+                {% endfor %}
+              </div>
+            </li>
+        {% endif %}
+      {% endfor %}
+      {% language_chooser "base/language_chooser.html" %}
     </ul>
   </div>
 </nav>
