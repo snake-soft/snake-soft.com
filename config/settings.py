@@ -184,6 +184,15 @@ CMS_LANGUAGES = {
             'hide_untranslated': False,
         },
     ],
+    2: [
+        {
+            'code': 'en',
+            'name': gettext('en'),
+            'redirect_on_fallback': True,
+            'public': True,
+            'hide_untranslated': False,
+        },
+    ],
     'default': {
         'redirect_on_fallback': True,
         'public': True,
@@ -193,9 +202,8 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('base/content.html', 'Content'),
+    ('home/home.html', 'Home'),
 )
 
 CMS_PERMISSION = True

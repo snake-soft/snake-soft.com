@@ -6,9 +6,21 @@ html {
 a{
 	outline:none;
 }
+p{
+	margin:0;
+}
 .bg-secondary{background-color:#23b1ec!important}
 /*.bg-info{background-color:#ff6d0c!important}
 */
+
+a.arrow-right:before{
+    content: "\f0da";
+    font-family: "Font Awesome\ 5 Free";
+    left:-5px;
+    position:relative;
+    font-weight: 900;
+}
+
 
 .btn-outline-info {
 color:#ff6d0c;
@@ -66,15 +78,38 @@ border-color:#ff6d0c;
 box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
 }
 #produkte{
-white-space: break-spaces;
+/*white-space: break-spaces;*/
 }
 #produkte .material-icons{font-size: xxx-large;}
 #produkte i::before{
-	font-size:100;
+	font-size:100px;
 }
-#technologien i{color: #23b1ec;} 
+#produkte svg{
+	height: 100px;
+}
+#technologien i{color: #23b1ec;font-size:150px;} 
 #technologien .active i{color: unset;}
-
+#technologien .tab-content{
+	background-color: white;
+}
+#technologien .nav-item{
+	color:red;
+}
+#technologien .nav-item a{
+	padding: 15px 30px;
+	font-size: large;
+	font-weight: bold;
+	position: relative;
+}
+#technologien .nav-item a:after {
+    content: "\f0d7";
+    font-family: "Font Awesome\ 5 Free";
+    left:5px;
+    position:relative;
+    font-weight: 900;
+    color:#23b1ec;
+ }
+ 
 .socials{padding:0; list-style-type:none; font-size:x-large;}
 .socials li{float:left;padding: 10px;}
 

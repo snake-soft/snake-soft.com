@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cms_tags %}
 
 {% block head %}
 <style>
@@ -22,7 +23,8 @@ main{
   <div class="row">
     <div class="col">
       {% block inner %}
-      {% endblock %}
+        {% placeholder "content" %}
+      {% endblock inner %}
     </div>
   </div>
 </div>

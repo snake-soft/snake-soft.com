@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cms_tags menu_tags sekizai_tags %}
 
 {% block head %}
 <style>
@@ -42,26 +43,21 @@
     </div>
   </div>
 </section>
-<section id="produkte" class="pt-5">
-  {% include 'home/produkte.html' %}
-</section>
-<section class="bg-secondary p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">{% include 'home/technologien.html' %}</section>
+
+
+<section id="produkte" class="pt-5">{% placeholder 'produkte' %}</section>
+
+
+<section id="technologien" class="p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5" style="background-color:#23b1ec;">{% placeholder 'technologien' %}</section>
+
+
 <div id="parallax" class="lazyload" style="background-image: url('{% static "images/heilbronn_von_Wartberg.jpg"%}');"></div>
-<section id="philosophie" class="text-center py-5" style="background-color:#80bb2d;">
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h2 class="my-5" style="color:white;">Unsere Leitsätze</h2>
-      <ul class="list-group list-group-flush m-5">
-        <li class="list-group-item">Das Produkt wird umso besser, je detailreicher <strong>Ihre</strong> Vision es ausmalt.</li>
-        <li class="list-group-item">Wir verstehen uns nicht als Marketing-, Wordpress-, oder Werbeagentur.</li>
-        <li class="list-group-item">Wir erschaffen Web-<strong>Anwendungen</strong>!</li>
-      </ul>
-      <a href="{% url 'philosophie' %}" class="btn btn-link text-white mt-5" role="button" aria-pressed="true"><i class="fas fa-caret-right"></i> Mehr über Software und Web</a>
-    </div>
-  </div>
-</div>
-</section>
-<div id="referenzen" class="p-5 m-5">{% include 'home/referenzen.html' %}</div>
+
+
+<section id="philosophie" class="text-center py-5" style="background-color:#80bb2d;">{% placeholder 'philosophie' %}</section>
+
+
+<section id="referenzen">{% placeholder 'referenzen' %}</section>
+
 <section id="kontakt" class="bg-secondary p-5">{% include 'content/kontakt.html' %}</section>
 {% endblock %}

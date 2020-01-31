@@ -19,8 +19,11 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
-    
+
     path('', Home.as_view(), name='home'),
+    #path('de/', Home.as_view(), name='home'),
+    path('en/', Home.as_view(), name='home'),
+    
     path('impressum/', TemplateView.as_view(template_name="content/impressum.html"), name='impressum'),
     path('datenschutz/', TemplateView.as_view(template_name="content/datenschutz.html"), name='datenschutz'),
     path('karriere/', TemplateView.as_view(template_name="content/karriere.html"), name='karriere'),
