@@ -10,10 +10,10 @@
 {% block content %}
 
 <!-- Banner -->
-  <div id="nowplaying" class="container position-absolute d-none d-sm-block" style="" title="{{random_file.size}} bytes">
+  <div id="nowplaying" class="container position-absolute d-none d-sm-block" style="" title="">
     <div class="row mx-auto">Now running:</div>
     <div class="row mx-auto" style="text-align:justify;">
-      <span style="display:inline-block;width:100%;"><small>{{random_file.classpath}}</small></span>
+      <span style="display:inline-block;width:100%;"><small id="classpath"><i class="fas fa-caret-right"></i> Loading random Django class... <i class="fas fa-caret-left"></i></small></span>
     </div>
   </div>
 <section id="jumbotron" class="jumbotron jumbotron-fluid p-0 m-0">

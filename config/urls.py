@@ -10,7 +10,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 from django.urls import path
-from home.views import Home, TemplateView
+from home.views import Home, TemplateView, RandomModuleView
 from django.views.generic.base import RedirectView
 from django.urls import reverse_lazy
 
@@ -25,6 +25,7 @@ urlpatterns = [
 
     path('cookie/policy/', include('cookie_policy.urls')),
     path('assistant/', RedirectView.as_view(url=reverse_lazy('kontakt')), name='assistant'),
+    path('api/django-random/', RandomModuleView, name='assistant'),
 ]
 
 

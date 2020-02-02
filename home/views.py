@@ -4,6 +4,7 @@ from django.contrib import messages
 from .telegram_bot import Bot
 import os
 from random import randint
+from django.http import JsonResponse
 
 
 def get_random_module():
@@ -41,6 +42,16 @@ def get_random_module():
             return random_file
         print(random_file.path)
         djangofiles.remove(random_file)
+
+
+def RandomModuleView(request):
+    file = get_random_module()
+    response = {
+        'data': file.read(),
+        'size': file.size,
+        'classpath': file.classpath
+    }
+    return JsonResponse(response)
 
 
 class Home(TemplateView):
