@@ -13,7 +13,7 @@ function fetch(){
 
 		for (char of json.data){
 			if (char == ' '){
-				var duration = random_integer(50, 150);
+				var duration = random_integer(40, 120);
 			}
 			await new Promise(resolve => setTimeout(resolve, duration));
 		    $('#code_runner').append(char);
@@ -28,7 +28,13 @@ function fetch(){
 	})
 }
 
+async function enable_cookie_banner(){
+	await new Promise(resolve => setTimeout(resolve, 5000));
+	$('#cookie-policy-bar').fadeIn();
+}
+
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
     fetch();
+    enable_cookie_banner();
 });

@@ -169,6 +169,13 @@ i:before{
 	padding:0;
 }
 
+
+#cookie-policy-bar{
+	display: none;
+}
+
 /* DJANGOCMS TOOLBAR*/
 .cms-toolbar-item-logo{display:none;}
+
+
 
