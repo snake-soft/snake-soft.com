@@ -5,9 +5,6 @@
   <title>Snake&#10711;Soft - {% block title %}Time is more than money{% endblock %}</title>
   <meta name="description" content="{% block description %}Die Agentur für Webanwendungen und Software mit Python (Django, Flask) in Heilbronn, Stuttgart, Karlsruhe, Baden-Württemberg, Deutschland, Europa und der Welt.{% endblock %}" />
   <meta name="keywords" content="{% block keywords %}Webanwendungen,Wordpress,Django,Python,cms,djangocms,Webapplikationen,Softwareentwicklung,Prozessoptimierung,Serververwaltung,Websites{% endblock %}" />
-  <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
-  {% render_block "js" %}
-  {% render_block "css" %}
   {% include 'base/head.html' %}
   {% block head %}{% endblock %}
   
@@ -35,6 +32,7 @@
        {% static_placeholder 'footer' %}
     </footer>
 </body>
+  <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -43,4 +41,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
   <script src="{% static "js/base.js" %}"></script>
   <script src="{% static "js/banner.js" %}"></script>
+  {% render_block "js" %}
+  {% render_block "css" %}
 </html>
