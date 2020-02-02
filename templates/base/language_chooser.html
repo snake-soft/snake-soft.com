@@ -7,7 +7,7 @@
   <div class="dropdown-menu" aria-labelledby="languageDropdown">
     {% for language in languages %}
       {% if current_language != language.0 %}
-          <a class="dropdown-item text-center" href="{% page_language_url language.0 %}" title="{% trans "Change to language:" %} {{ language.1 }}">
+          <a class="dropdown-item text-center text-md-left" href="{% page_language_url language.0 %}" title="{% trans "Change to language:" %} {{ language.1 }}">
             <span style="width: 20px;display: inline-block;"><img src="{% static 'svg/language' %}/{{ language.1 }}.svg" /></span>
           </a>
       {% endif %}
