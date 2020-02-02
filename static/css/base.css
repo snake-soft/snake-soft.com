@@ -114,7 +114,14 @@ box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
 .socials li{float:left;padding: 10px;}
 
 
-
+#philosophie .list-group-item{
+	background: none;
+	color: white;
+	border-color: white;
+}
+#philosophie .list-group-item p{
+	margin: 10px;
+}
 
 #nowplaying {
     -webkit-transform: rotate(-16deg);
@@ -169,10 +176,6 @@ i:before{
 	padding:0;
 }
 
-
-#cookie-policy-bar{
-	display: none;
-}
 
 /* DJANGOCMS TOOLBAR*/
 .cms-toolbar-item-logo{display:none;}

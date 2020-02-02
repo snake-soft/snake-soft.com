@@ -163,7 +163,6 @@ INSTALLED_APPS = [
 
     # Eigene:
     'config',
-    'cookie_policy',
     'home',
 ]
 
@@ -237,6 +236,3 @@ MESSAGE_TAGS = {
     message_constants.DEBUG: 'dark'
     }
 MESSAGE_LEVEL = message_constants.DEBUG
-
-
-COOKIE_POLICY_URL = '/datenschutz/'

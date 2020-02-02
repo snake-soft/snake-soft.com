@@ -23,7 +23,6 @@ urlpatterns = [
         {'sitemaps': {'cmspages': CMSSitemap}}),
 
 
-    path('cookie/policy/', include('cookie_policy.urls')),
     path('assistant/', RedirectView.as_view(url=reverse_lazy('kontakt')), name='assistant'),
     path('api/django-random/', RandomModuleView, name='assistant'),
 ]

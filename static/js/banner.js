@@ -8,6 +8,7 @@ function fetch(){
 		console.log( "success" );
 	})
 	.done(async function(json) {
+		await new Promise(resolve => setTimeout(resolve, 500));
 		$("#classpath").html(json.classpath);
 		$('#nowplaying').prop('title', json.size + ' bytes');
 
@@ -36,5 +37,4 @@ async function enable_cookie_banner(){
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
     fetch();
-    enable_cookie_banner();
 });
