@@ -2,9 +2,8 @@
 {% load static %}
 {% load cms_tags menu_tags sekizai_tags %}
 
-{% block head %}
-<style>
-</style>
+{% block loadafter %}
+<script src="{% static "js/banner.js" %}"></script>
 {% endblock %}
 
 {% block content %}

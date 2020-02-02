@@ -2,12 +2,37 @@
 <!DOCTYPE html>
 <html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="expires" content="43200">
   <title>Snake&#10711;Soft - {% block title %}Time is more than money{% endblock %}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta property="og:image" content="{% static "/images/logo_quadratisch.png" %}">
+  <link rel="canonical" href="https://snake-soft.com{{ request.get_full_path }}">
+  <meta name="msvalidate.01" content="E07487117979D4A6567A07BBE68B9B8B" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" type="image/svg+xml" href="{% static "favicon/favicon.svg" %}" sizes="any">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{% block description %}Die Agentur für Webanwendungen und Software mit Python (Django, Flask) in Heilbronn, Stuttgart, Karlsruhe, Baden-Württemberg, Deutschland, Europa und der Welt.{% endblock %}" />
   <meta name="keywords" content="{% block keywords %}Webanwendungen,Wordpress,Django,Python,cms,djangocms,Webapplikationen,Softwareentwicklung,Prozessoptimierung,Serververwaltung,Websites{% endblock %}" />
-  {% include 'base/head.html' %}
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" async=""></script>
+
+  <link rel="stylesheet" href="{% static "css/base.css" %}" />
+
+
   {% block head %}{% endblock %}
   
+  {% render_block "js" %}
+  {% render_block "css" %}
 </head>
 <body>
   {% cms_toolbar %}
@@ -32,15 +57,39 @@
        {% static_placeholder 'footer' %}
     </footer>
 </body>
-  <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-  <script src="{% static "js/base.js" %}"></script>
-  <script src="{% static "js/banner.js" %}"></script>
-  {% render_block "js" %}
-  {% render_block "css" %}
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156246273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-156246273-1');
+  </script>
+  
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '746631672412263');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=746631672412263&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  {% block loadafter %}{% endblock %}
 </html>
