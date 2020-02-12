@@ -23,7 +23,9 @@ a.arrow-right:before{
     position:relative;
     font-weight: 900;
 }
-
+a:hover{
+	text-decoration: none;
+}
 
 .btn-outline-info {
 color:#ff6d0c;
@@ -148,7 +150,10 @@ box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
 #technologien #Layer_1{
 	width:100%;
 }
-
+.nav-tabs .nav-link{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
 
 .socials{padding:0; list-style-type:none; font-size:x-large;}
 .socials li{float:left;padding: 10px;}
