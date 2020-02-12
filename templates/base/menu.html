@@ -15,7 +15,7 @@
                 {{ child.get_menu_title }}
               </a>
               <div class="dropdown-menu" aria-labelledby="produkteDropdown">
-                <a class="dropdown-item" href="/#{{ child.get_menu_title|lower }}">Übersicht</a>
+                <a class="dropdown-item" href="#{{ child.get_menu_title|lower }}">Übersicht</a>
                 <div class="dropdown-divider"></div>
                 {% for entry in child.children %}
                   <a class="dropdown-item" href="{{ entry.get_absolute_url }}">{{ entry.get_menu_title }}</a>
