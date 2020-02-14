@@ -13,6 +13,7 @@ from django.urls import path
 from home.views import Home, TemplateView, RandomModuleView
 from django.views.generic.base import RedirectView
 from django.urls import reverse_lazy
+from assistant.views import Assistant
 
 admin.autodiscover()
 
@@ -22,13 +23,16 @@ urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
 
+    path('assistant/', Assistant.as_view(), name='assistant'),
 
-    path('assistant/', RedirectView.as_view(url=reverse_lazy('kontakt')), name='assistant'),
-    path('api/django-random/', RandomModuleView, name='assistant'),
+    #path('de/assistant/', Assistant.as_view(), name='assistant'),
+    #path('en/assistant/', Assistant.as_view(), name='assistant'),
+    path('api/django-random/', RandomModuleView, name='django-random'),
 ]
 
 
 urlpatterns += i18n_patterns(
+    path('assistant/', Assistant.as_view()),
     url(r'^admin/', admin.site.urls),  # NOQA
     url(r'^', include('cms.urls')),
 )

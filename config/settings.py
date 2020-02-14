@@ -164,6 +164,7 @@ INSTALLED_APPS = [
     # Eigene:
     'config',
     'home',
+    'assistant',
 ]
 
 LANGUAGES = (

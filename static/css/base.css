@@ -128,7 +128,12 @@ box-shadow: inset 0px 0px 5px 5px rgba(143,143,143,0.5);
 	box-shadow: 0 0 10px 2px rgba(150,150,150,1);
 }
 
-
+#assistant{
+	color:white;
+}
+#assistant #id_email, #assistant #id_phone, #assistant table, #assistant #id_message{
+	width:100%;
+}
 
 #technologien i{color: #23b1ec;font-size:150px;} 
 #technologien .active i{color: unset;}
