@@ -50,6 +50,13 @@ border-color:#ff6d0c;
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs, .nav-link, .nav-link:hover{
 	border:none!important;
 	}
+
+#messages{
+	position: fixed;
+	top: 100px;
+	z-index: 1000;
+}
+	
 #werkzeuge li a{border-radius:0;}
 
 
