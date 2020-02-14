@@ -1,4 +1,4 @@
-{% load static %}{% load analytical %}{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}{% load analytical %}{% load piwik %}{% load cms_tags menu_tags sekizai_tags %}
 <!DOCTYPE html>
 <html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -64,6 +64,7 @@
        {% static_placeholder 'footer' %}
     </footer>
     {% analytical_body_bottom %}
+    {% piwik %}
 </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
