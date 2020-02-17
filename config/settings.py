@@ -241,8 +241,8 @@ MESSAGE_LEVEL = message_constants.DEBUG
 
 
 # https://django-analytical.readthedocs.io/en/latest/install.html
-GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-156246273-1'
-FACEBOOK_PIXEL_ID = '746631672412263'
+#GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-156246273-1'
+#FACEBOOK_PIXEL_ID = '746631672412263'
 PIWIK_DOMAIN_PATH = 'snake-soft.com/x'
 PIWIK_SITE_ID = '1'
 
