@@ -26,6 +26,14 @@ a.arrow-right:before{
 a:hover{
 	text-decoration: none;
 }
+blockquote{
+	border-left: 2px solid lightgray;
+	padding-left: 10px;
+}
+
+.btn{
+	border-radius:0;
+}
 
 .btn-outline-info {
 color:#ff6d0c;
