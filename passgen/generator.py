@@ -20,6 +20,8 @@ class Generator:
     def get_password(self, length=16):
         if not self.charsets:
             return ''
+        if not length:
+            length = 0
         password = []
         chars = self.get_chars()
         for i in range(length):

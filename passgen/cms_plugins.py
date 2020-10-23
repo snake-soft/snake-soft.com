@@ -13,7 +13,6 @@ class PassgenPlugin(CMSPluginBase):
     name = _("Password Generator Plugin")
     render_template = "passgen/passgen_form.html"
     cache = False
-    form = PassgenForm
 
     def render(self, context, instance, placeholder):
         context = super(PassgenPlugin, self).render(context, instance, placeholder)
@@ -35,7 +34,10 @@ class PassgenPlugin(CMSPluginBase):
 
     def generate_password(self, request):
         charsets = []
-        length = request.session['length']
+        if 'length' in request.session:
+            length = request.session['length']
+        else:
+            length = 16
         for name, enabled in request.session.items():
             if enabled:
                 charsets.append(name)
