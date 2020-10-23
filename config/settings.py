@@ -197,7 +197,7 @@ CMS_LANGUAGES = {
             'code': 'ru',
             'name': gettext('ru'),
             'redirect_on_fallback': True,
-            'public': False,
+            'public': True,
             'hide_untranslated': False,
         },
     ],
