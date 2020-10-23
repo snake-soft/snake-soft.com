@@ -8,3 +8,6 @@ __pycache__
 .directory
 /project.db
 /.settings/
+*~
+static_root/
+venv/
