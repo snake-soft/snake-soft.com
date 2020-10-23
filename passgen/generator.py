@@ -60,8 +60,8 @@ class CharSet(Enum):
         return self.chars
 
     @classmethod
-    def by_name(cls, name, *names, length=16):
-        names = [name] + list(names)
+    def by_name(cls, *names, length=16):
+        # names = [name] + list(names)
         for name in names:
             if hasattr(cls, name.upper()):
                 yield(cls(getattr(cls, name.upper())))
