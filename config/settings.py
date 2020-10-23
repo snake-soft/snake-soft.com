@@ -166,6 +166,7 @@ INSTALLED_APPS = [
     'home',
     'assistant',
     'analytical',
+    'passgen',
 ]
 
 LANGUAGES = (
@@ -245,4 +246,4 @@ MESSAGE_LEVEL = message_constants.DEBUG
 #FACEBOOK_PIXEL_ID = '746631672412263'
 PIWIK_DOMAIN_PATH = 'snake-soft.com/x'
 PIWIK_SITE_ID = '1'
-
+LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'), )
